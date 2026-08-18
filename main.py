@@ -1,3 +1,44 @@
+
+from flask import Flask
+import threading
+
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Bot online 24/7"
+
+def run():
+    app.run(host='0.0.0.0', port=8080)
+
+def keep_alive():
+    t = threading.Thread(target=run)
+    t.start()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import discord
 from discord.ext import commands
 import asyncio
@@ -110,5 +151,6 @@ async def setup_tickets(ctx):
         color=discord.Color.blue()
     )
     await ctx.send(embed=embed, view=TicketDropdownView())
+keep_alive()
 
-bot.run("MTUzODk2OTU2ODk3Mjc3MTM0OA.Gxyelq.BM3ilDJ0sOg6XsHb1sLNrlWino94zvXBk1dsR8")
+bot.run("MTUzODk2OTU2ODk3Mjc3MTM0OA.GaJhyg.XYS83CTTZezgK0BQHD0m3tgm6RzK3Wh3_6MCoU")
