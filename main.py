@@ -153,4 +153,7 @@ async def setup_tickets(ctx):
     await ctx.send(embed=embed, view=TicketDropdownView())
 keep_alive()
 
-bot.run("MTUzODk2OTU2ODk3Mjc3MTM0OA.GaJhyg.XYS83CTTZezgK0BQHD0m3tgm6RzK3Wh3_6MCoU")
+import os
+
+keep_alive()
+bot.run(os.environ.get("MTUzODk2OTU2ODk3Mjc3MTM0OA.G1KxK1.BsNnLKVVCzp-XzK9QrI5nsOriH3ho3UFq6Wnm4")
