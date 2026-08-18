@@ -95,4 +95,4 @@ async def setup_tickets(ctx):
 # --- INITIALIZATION ---
 keep_alive()
 
-bot.run(os.getenv("MTUzODk2OTU2ODk3Mjc3MTM0OA.GE1pFN.zz4X_Kcd5HpYzwVO8rzMAlVrn_a9lvTpjoZyfE"))
+bot.run(os.environ.get("DISCORD_TOKEN"))
