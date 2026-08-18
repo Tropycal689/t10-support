@@ -95,4 +95,4 @@ async def setup_tickets(ctx):
 # --- INITIALIZATION ---
 keep_alive()
 
-bot.run("MTUzODk2OTU2ODk3Mjc3MTM0OA.GwkJ46.7BlRp-NmYn3gdyc7TpEamLYIhrmLgXAJfWsw9k")
+bot.run(os.environ.get("MTUzODk2OTU2ODk3Mjc3MTM0OA.GYX8h0.DbJOvJnijZXInDsH58j9nHaxKkT4e16BfY-zwY"))
