@@ -151,9 +151,7 @@ async def setup_tickets(ctx):
         color=discord.Color.blue()
     )
     await ctx.send(embed=embed, view=TicketDropdownView())
-keep_alive()
-
-import os
 
 keep_alive()
-bot.run(os.environ.get("MTUzODk2OTU2ODk3Mjc3MTM0OA.G1KxK1.BsNnLKVVCzp-XzK9QrI5nsOriH3ho3UFq6Wnm4")
+bot.run(os.environ.get("DISCORD_TOKEN"))
+
